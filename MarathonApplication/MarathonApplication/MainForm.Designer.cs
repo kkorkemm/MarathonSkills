@@ -30,14 +30,14 @@ namespace MarathonApplication
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.ForRunnerBtn = new System.Windows.Forms.Button();
             this.ForSponsorBtn = new System.Windows.Forms.Button();
             this.ForKnowBtn = new System.Windows.Forms.Button();
-            this.footer1 = new MarathonApplication.Footer();
             this.loginButton1 = new MarathonApplication.LoginButton();
+            this.footer1 = new MarathonApplication.Footer();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -52,6 +52,16 @@ namespace MarathonApplication
             this.panel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.panel1.Size = new System.Drawing.Size(1314, 296);
             this.panel1.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1314, 252);
+            this.panel2.TabIndex = 2;
             // 
             // label1
             // 
@@ -76,16 +86,6 @@ namespace MarathonApplication
             this.label2.TabIndex = 1;
             this.label2.Text = "Москва, Россия\r\nсреда 21 октября 2016\r\n";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1314, 252);
-            this.panel2.TabIndex = 2;
             // 
             // ForRunnerBtn
             // 
@@ -120,6 +120,14 @@ namespace MarathonApplication
             this.ForKnowBtn.UseVisualStyleBackColor = true;
             this.ForKnowBtn.Click += new System.EventHandler(this.ForKnowBtn_Click);
             // 
+            // loginButton1
+            // 
+            this.loginButton1.Location = new System.Drawing.Point(1033, 535);
+            this.loginButton1.Name = "loginButton1";
+            this.loginButton1.Size = new System.Drawing.Size(187, 65);
+            this.loginButton1.TabIndex = 8;
+
+            // 
             // footer1
             // 
             this.footer1.BackColor = System.Drawing.SystemColors.WindowFrame;
@@ -128,13 +136,6 @@ namespace MarathonApplication
             this.footer1.Name = "footer1";
             this.footer1.Size = new System.Drawing.Size(1314, 62);
             this.footer1.TabIndex = 7;
-            // 
-            // loginButton1
-            // 
-            this.loginButton1.Location = new System.Drawing.Point(1033, 535);
-            this.loginButton1.Name = "loginButton1";
-            this.loginButton1.Size = new System.Drawing.Size(187, 65);
-            this.loginButton1.TabIndex = 8;
             // 
             // MainForm
             // 

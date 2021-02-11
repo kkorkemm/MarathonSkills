@@ -52,6 +52,12 @@
     <Compile Include="LoginButton.Designer.cs">
       <DependentUpon>LoginButton.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,11 +84,32 @@
     <Compile Include="RegisterAsRunnerForm.Designer.cs">
       <DependentUpon>RegisterAsRunnerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="RunnerRegistForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RunnerRegistForm.Designer.cs">
+      <DependentUpon>RunnerRegistForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RunnerRegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RunnerRegistrationForm.Designer.cs">
+      <DependentUpon>RunnerRegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestRegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestRegisterForm.Designer.cs">
+      <DependentUpon>TestRegisterForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Footer.resx">
       <DependentUpon>Footer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginButton.resx">
       <DependentUpon>LoginButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -102,6 +129,15 @@
     <EmbeddedResource Include="RegisterAsRunnerForm.resx">
       <DependentUpon>RegisterAsRunnerForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RunnerRegistForm.resx">
+      <DependentUpon>RunnerRegistForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RunnerRegistrationForm.resx">
+      <DependentUpon>RunnerRegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestRegisterForm.resx">
+      <DependentUpon>TestRegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -116,4 +152,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>if exist "$(TargetPath).locked" del "$(TargetPath).locked"
+if exist "$(TargetPath)" if not exist "$(TargetPath).locked" move "$(TargetPath)" "$(TargetPath).locked"</PreBuildEvent>
+  </PropertyGroup>
 </Project>

@@ -44,6 +44,7 @@ namespace MarathonApplication
             this.header1.Name = "header1";
             this.header1.Size = new System.Drawing.Size(1162, 92);
             this.header1.TabIndex = 0;
+
             // 
             // footer1
             // 
@@ -60,6 +61,7 @@ namespace MarathonApplication
             this.loginButton1.Name = "loginButton1";
             this.loginButton1.Size = new System.Drawing.Size(187, 65);
             this.loginButton1.TabIndex = 2;
+
             // 
             // OldRunnerBtn
             // 

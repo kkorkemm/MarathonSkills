@@ -20,8 +20,9 @@ namespace MarathonApplication
         private void BackBtn_Click(object sender, EventArgs e)
         {
             MainForm main = new MainForm();
+            foreach (Form form in Application.OpenForms.Cast<Form>())
+                form.Hide();
             main.Show();
-            Hide();
         }
     }
 }
