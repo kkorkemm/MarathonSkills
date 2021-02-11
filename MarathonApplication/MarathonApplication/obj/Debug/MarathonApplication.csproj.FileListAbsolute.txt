@@ -15,4 +15,3 @@ C:\WS\MarathonSkills\MarathonSkills\MarathonApplication\MarathonApplication\obj\
 C:\WS\MarathonSkills\MarathonSkills\MarathonApplication\MarathonApplication\obj\Debug\MarathonApplication.LoginForm.resources
 C:\WS\MarathonSkills\MarathonSkills\MarathonApplication\MarathonApplication\obj\Debug\MarathonApplication.TestRegisterForm.resources
 C:\WS\MarathonSkills\MarathonSkills\MarathonApplication\MarathonApplication\obj\Debug\MarathonApplication.RunnerRegistForm.resources
-C:\WS\MarathonSkills\MarathonSkills\MarathonApplication\MarathonApplication\obj\Debug\MarathonApplication.__RunnerRegistrationForm.resources

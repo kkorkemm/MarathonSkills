@@ -90,12 +90,6 @@
     <Compile Include="RunnerRegistForm.Designer.cs">
       <DependentUpon>RunnerRegistForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="RunnerRegistrationForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RunnerRegistrationForm.Designer.cs">
-      <DependentUpon>RunnerRegistrationForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="TestRegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,9 +125,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RunnerRegistForm.resx">
       <DependentUpon>RunnerRegistForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RunnerRegistrationForm.resx">
-      <DependentUpon>RunnerRegistrationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TestRegisterForm.resx">
       <DependentUpon>TestRegisterForm.cs</DependentUpon>
