@@ -29,11 +29,18 @@ namespace MarathonApplication
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.header1 = new MarathonApplication.Header();
             this.footer1 = new MarathonApplication.Footer();
             this.loginButton1 = new MarathonApplication.LoginButton();
             this.OldRunnerBtn = new System.Windows.Forms.Button();
             this.NewRunnerBtn = new System.Windows.Forms.Button();
+            this.dataSet1 = new MarathonApplication.DataSet1();
+            this.runnerBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.runnerTableAdapter = new MarathonApplication.DataSet1TableAdapters.RunnerTableAdapter();
+            this.tableAdapterManager = new MarathonApplication.DataSet1TableAdapters.TableAdapterManager();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.runnerBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // header1
@@ -44,13 +51,12 @@ namespace MarathonApplication
             this.header1.Name = "header1";
             this.header1.Size = new System.Drawing.Size(1162, 92);
             this.header1.TabIndex = 0;
-
             // 
             // footer1
             // 
             this.footer1.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.footer1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.footer1.Location = new System.Drawing.Point(0, 495);
+            this.footer1.Location = new System.Drawing.Point(0, 508);
             this.footer1.Name = "footer1";
             this.footer1.Size = new System.Drawing.Size(1162, 62);
             this.footer1.TabIndex = 1;
@@ -61,7 +67,6 @@ namespace MarathonApplication
             this.loginButton1.Name = "loginButton1";
             this.loginButton1.Size = new System.Drawing.Size(187, 65);
             this.loginButton1.TabIndex = 2;
-
             // 
             // OldRunnerBtn
             // 
@@ -85,11 +90,32 @@ namespace MarathonApplication
             this.NewRunnerBtn.UseVisualStyleBackColor = true;
             this.NewRunnerBtn.Click += new System.EventHandler(this.NewRunnerBtn_Click);
             // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "DataSet1";
+            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // runnerBindingSource
+            // 
+            this.runnerBindingSource.DataMember = "Runner";
+            this.runnerBindingSource.DataSource = this.dataSet1;
+            // 
+            // runnerTableAdapter
+            // 
+            this.runnerTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Login_PasswordTableAdapter = null;
+            this.tableAdapterManager.RunnerTableAdapter = this.runnerTableAdapter;
+            this.tableAdapterManager.UpdateOrder = MarathonApplication.DataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
             // RegisterAsRunnerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1162, 557);
+            this.ClientSize = new System.Drawing.Size(1162, 570);
             this.Controls.Add(this.NewRunnerBtn);
             this.Controls.Add(this.OldRunnerBtn);
             this.Controls.Add(this.loginButton1);
@@ -98,6 +124,9 @@ namespace MarathonApplication
             this.Name = "RegisterAsRunnerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Marathon Skills 2016 – Register as a runner";
+            this.Load += new System.EventHandler(this.RegisterAsRunnerForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.runnerBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -109,5 +138,9 @@ namespace MarathonApplication
         private LoginButton loginButton1;
         private System.Windows.Forms.Button OldRunnerBtn;
         private System.Windows.Forms.Button NewRunnerBtn;
+        private DataSet1 dataSet1;
+        private System.Windows.Forms.BindingSource runnerBindingSource;
+        private DataSet1TableAdapters.RunnerTableAdapter runnerTableAdapter;
+        private DataSet1TableAdapters.TableAdapterManager tableAdapterManager;
     }
 }
