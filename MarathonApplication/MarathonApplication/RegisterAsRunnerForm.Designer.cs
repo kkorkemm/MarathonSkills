@@ -124,7 +124,7 @@ namespace MarathonApplication
             this.Name = "RegisterAsRunnerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Marathon Skills 2016 – Register as a runner";
-            this.Load += new System.EventHandler(this.RegisterAsRunnerForm_Load);
+
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.runnerBindingSource)).EndInit();
             this.ResumeLayout(false);

@@ -37,14 +37,13 @@
             System.Windows.Forms.Label birthLabel;
             System.Windows.Forms.Label countryLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RunnerRegistForm));
-            this.header1 = new MarathonApplication.Header();
-            this.footer1 = new MarathonApplication.Footer();
+            System.Windows.Forms.Label label3;
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.PhotoShowBtn = new System.Windows.Forms.Button();
             this.PhotoText = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Photo = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.RegistBtn = new System.Windows.Forms.Button();
             this.dataSet1 = new MarathonApplication.DataSet1();
@@ -58,6 +57,9 @@
             this.genderTextBox = new System.Windows.Forms.TextBox();
             this.birthDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.countryTextBox = new System.Windows.Forms.TextBox();
+            this.footer1 = new MarathonApplication.Footer();
+            this.header1 = new MarathonApplication.Header();
+            this.passwordVerText = new System.Windows.Forms.TextBox();
             emailLabel = new System.Windows.Forms.Label();
             passwordLabel = new System.Windows.Forms.Label();
             nameLabel = new System.Windows.Forms.Label();
@@ -65,7 +67,8 @@
             genderLabel = new System.Windows.Forms.Label();
             birthLabel = new System.Windows.Forms.Label();
             countryLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            label3 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.Photo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.runnerBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -73,83 +76,72 @@
             // emailLabel
             // 
             emailLabel.AutoSize = true;
-            emailLabel.Location = new System.Drawing.Point(160, 295);
+            emailLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            emailLabel.Location = new System.Drawing.Point(237, 261);
             emailLabel.Name = "emailLabel";
-            emailLabel.Size = new System.Drawing.Size(52, 20);
+            emailLabel.Size = new System.Drawing.Size(66, 25);
             emailLabel.TabIndex = 40;
             emailLabel.Text = "Email:";
             // 
             // passwordLabel
             // 
             passwordLabel.AutoSize = true;
-            passwordLabel.Location = new System.Drawing.Point(160, 327);
+            passwordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            passwordLabel.Location = new System.Drawing.Point(212, 298);
             passwordLabel.Name = "passwordLabel";
-            passwordLabel.Size = new System.Drawing.Size(82, 20);
+            passwordLabel.Size = new System.Drawing.Size(91, 25);
             passwordLabel.TabIndex = 42;
-            passwordLabel.Text = "Password:";
+            passwordLabel.Text = "Пароль: ";
             // 
             // nameLabel
             // 
             nameLabel.AutoSize = true;
-            nameLabel.Location = new System.Drawing.Point(160, 359);
+            nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            nameLabel.Location = new System.Drawing.Point(238, 370);
             nameLabel.Name = "nameLabel";
-            nameLabel.Size = new System.Drawing.Size(55, 20);
+            nameLabel.Size = new System.Drawing.Size(65, 25);
             nameLabel.TabIndex = 44;
-            nameLabel.Text = "Name:";
+            nameLabel.Text = "Имя: ";
             // 
             // surnameLabel
             // 
             surnameLabel.AutoSize = true;
-            surnameLabel.Location = new System.Drawing.Point(160, 391);
+            surnameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            surnameLabel.Location = new System.Drawing.Point(189, 406);
             surnameLabel.Name = "surnameLabel";
-            surnameLabel.Size = new System.Drawing.Size(78, 20);
+            surnameLabel.Size = new System.Drawing.Size(114, 25);
             surnameLabel.TabIndex = 46;
-            surnameLabel.Text = "Surname:";
+            surnameLabel.Text = "Фамилия: ";
             // 
             // genderLabel
             // 
             genderLabel.AutoSize = true;
-            genderLabel.Location = new System.Drawing.Point(160, 423);
+            genderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            genderLabel.Location = new System.Drawing.Point(243, 442);
             genderLabel.Name = "genderLabel";
-            genderLabel.Size = new System.Drawing.Size(67, 20);
+            genderLabel.Size = new System.Drawing.Size(60, 25);
             genderLabel.TabIndex = 48;
-            genderLabel.Text = "Gender:";
+            genderLabel.Text = "Пол: ";
             // 
             // birthLabel
             // 
             birthLabel.AutoSize = true;
-            birthLabel.Location = new System.Drawing.Point(160, 456);
+            birthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            birthLabel.Location = new System.Drawing.Point(131, 478);
             birthLabel.Name = "birthLabel";
-            birthLabel.Size = new System.Drawing.Size(46, 20);
+            birthLabel.Size = new System.Drawing.Size(172, 25);
             birthLabel.TabIndex = 50;
-            birthLabel.Text = "Birth:";
+            birthLabel.Text = "Дата рождения: ";
             // 
             // countryLabel
             // 
             countryLabel.AutoSize = true;
-            countryLabel.Location = new System.Drawing.Point(160, 487);
+            countryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            countryLabel.Location = new System.Drawing.Point(213, 514);
             countryLabel.Name = "countryLabel";
-            countryLabel.Size = new System.Drawing.Size(68, 20);
+            countryLabel.Size = new System.Drawing.Size(90, 25);
             countryLabel.TabIndex = 52;
-            countryLabel.Text = "Country:";
-            // 
-            // header1
-            // 
-            this.header1.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.header1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.header1.Location = new System.Drawing.Point(0, 0);
-            this.header1.Name = "header1";
-            this.header1.Size = new System.Drawing.Size(1382, 92);
-            this.header1.TabIndex = 0;
-            // 
-            // footer1
-            // 
-            this.footer1.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.footer1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.footer1.Location = new System.Drawing.Point(0, 652);
-            this.footer1.Name = "footer1";
-            this.footer1.Size = new System.Drawing.Size(1382, 62);
-            this.footer1.TabIndex = 1;
+            countryLabel.Text = "Страна: ";
             // 
             // label2
             // 
@@ -196,6 +188,7 @@
             this.PhotoShowBtn.TabIndex = 30;
             this.PhotoShowBtn.Text = "Просмотр...";
             this.PhotoShowBtn.UseVisualStyleBackColor = true;
+            this.PhotoShowBtn.Click += new System.EventHandler(this.PhotoShowBtn_Click);
             // 
             // PhotoText
             // 
@@ -206,21 +199,21 @@
             this.PhotoText.Size = new System.Drawing.Size(298, 32);
             this.PhotoText.TabIndex = 29;
             // 
-            // pictureBox1
+            // Photo
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1131, 261);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(173, 233);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 28;
-            this.pictureBox1.TabStop = false;
+            this.Photo.Image = ((System.Drawing.Image)(resources.GetObject("Photo.Image")));
+            this.Photo.Location = new System.Drawing.Point(1133, 261);
+            this.Photo.Margin = new System.Windows.Forms.Padding(4);
+            this.Photo.Name = "Photo";
+            this.Photo.Size = new System.Drawing.Size(188, 233);
+            this.Photo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Photo.TabIndex = 28;
+            this.Photo.TabStop = false;
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Verdana", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(676, 552);
+            this.button2.Location = new System.Drawing.Point(717, 568);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(172, 48);
@@ -232,7 +225,7 @@
             // RegistBtn
             // 
             this.RegistBtn.Font = new System.Drawing.Font("Verdana", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.RegistBtn.Location = new System.Drawing.Point(443, 552);
+            this.RegistBtn.Location = new System.Drawing.Point(484, 568);
             this.RegistBtn.Margin = new System.Windows.Forms.Padding(4);
             this.RegistBtn.Name = "RegistBtn";
             this.RegistBtn.Size = new System.Drawing.Size(172, 48);
@@ -265,64 +258,111 @@
             // emailTextBox
             // 
             this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.runnerBindingSource, "Email", true));
-            this.emailTextBox.Location = new System.Drawing.Point(248, 292);
+            this.emailTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.emailTextBox.Location = new System.Drawing.Point(309, 262);
             this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(200, 26);
+            this.emailTextBox.Size = new System.Drawing.Size(274, 30);
             this.emailTextBox.TabIndex = 41;
             // 
             // passwordTextBox
             // 
             this.passwordTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.runnerBindingSource, "Password", true));
-            this.passwordTextBox.Location = new System.Drawing.Point(248, 324);
+            this.passwordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.passwordTextBox.Location = new System.Drawing.Point(309, 298);
             this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(200, 26);
+            this.passwordTextBox.PasswordChar = '*';
+            this.passwordTextBox.Size = new System.Drawing.Size(274, 30);
             this.passwordTextBox.TabIndex = 43;
             // 
             // nameTextBox
             // 
             this.nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.runnerBindingSource, "Name", true));
-            this.nameTextBox.Location = new System.Drawing.Point(248, 356);
+            this.nameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.nameTextBox.Location = new System.Drawing.Point(309, 370);
             this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(200, 26);
+            this.nameTextBox.Size = new System.Drawing.Size(274, 30);
             this.nameTextBox.TabIndex = 45;
             // 
             // surnameTextBox
             // 
             this.surnameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.runnerBindingSource, "Surname", true));
-            this.surnameTextBox.Location = new System.Drawing.Point(248, 388);
+            this.surnameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.surnameTextBox.Location = new System.Drawing.Point(309, 406);
             this.surnameTextBox.Name = "surnameTextBox";
-            this.surnameTextBox.Size = new System.Drawing.Size(200, 26);
+            this.surnameTextBox.Size = new System.Drawing.Size(274, 30);
             this.surnameTextBox.TabIndex = 47;
             // 
             // genderTextBox
             // 
             this.genderTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.runnerBindingSource, "Gender", true));
-            this.genderTextBox.Location = new System.Drawing.Point(248, 420);
+            this.genderTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.genderTextBox.Location = new System.Drawing.Point(309, 442);
             this.genderTextBox.Name = "genderTextBox";
-            this.genderTextBox.Size = new System.Drawing.Size(200, 26);
+            this.genderTextBox.Size = new System.Drawing.Size(274, 30);
             this.genderTextBox.TabIndex = 49;
             // 
             // birthDateTimePicker
             // 
             this.birthDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.runnerBindingSource, "Birth", true));
-            this.birthDateTimePicker.Location = new System.Drawing.Point(248, 452);
+            this.birthDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.birthDateTimePicker.Location = new System.Drawing.Point(309, 478);
             this.birthDateTimePicker.Name = "birthDateTimePicker";
-            this.birthDateTimePicker.Size = new System.Drawing.Size(200, 26);
+            this.birthDateTimePicker.Size = new System.Drawing.Size(274, 30);
             this.birthDateTimePicker.TabIndex = 51;
             // 
             // countryTextBox
             // 
             this.countryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.runnerBindingSource, "Country", true));
-            this.countryTextBox.Location = new System.Drawing.Point(248, 484);
+            this.countryTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.countryTextBox.Location = new System.Drawing.Point(309, 514);
             this.countryTextBox.Name = "countryTextBox";
-            this.countryTextBox.Size = new System.Drawing.Size(200, 26);
+            this.countryTextBox.Size = new System.Drawing.Size(274, 30);
             this.countryTextBox.TabIndex = 53;
+            // 
+            // footer1
+            // 
+            this.footer1.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.footer1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.footer1.Location = new System.Drawing.Point(0, 652);
+            this.footer1.Name = "footer1";
+            this.footer1.Size = new System.Drawing.Size(1491, 62);
+            this.footer1.TabIndex = 1;
+            // 
+            // header1
+            // 
+            this.header1.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.header1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.header1.Location = new System.Drawing.Point(0, 0);
+            this.header1.Name = "header1";
+            this.header1.Size = new System.Drawing.Size(1491, 92);
+            this.header1.TabIndex = 0;
+            // 
+            // passwordVerText
+            // 
+            this.passwordVerText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.passwordVerText.Location = new System.Drawing.Point(309, 334);
+            this.passwordVerText.Name = "passwordVerText";
+            this.passwordVerText.PasswordChar = '*';
+            this.passwordVerText.Size = new System.Drawing.Size(274, 30);
+            this.passwordVerText.TabIndex = 54;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            label3.Location = new System.Drawing.Point(83, 334);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(220, 25);
+            label3.TabIndex = 55;
+            label3.Text = "Подтвердите пароль: ";
             // 
             // RunnerRegistForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1382, 714);
+            this.ClientSize = new System.Drawing.Size(1491, 714);
+            this.Controls.Add(label3);
+            this.Controls.Add(this.passwordVerText);
             this.Controls.Add(emailLabel);
             this.Controls.Add(this.emailTextBox);
             this.Controls.Add(passwordLabel);
@@ -342,7 +382,7 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.PhotoShowBtn);
             this.Controls.Add(this.PhotoText);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.Photo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.footer1);
@@ -351,7 +391,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Marathon Skills 2016 – Register as a runner";
             this.Load += new System.EventHandler(this.RunnerRegistForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Photo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.runnerBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -368,11 +408,10 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button PhotoShowBtn;
         private System.Windows.Forms.TextBox PhotoText;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox Photo;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button RegistBtn;
         private DataSet1 dataSet1;
-        private System.Windows.Forms.BindingSource runnerBindingSource;
         private DataSet1TableAdapters.RunnerTableAdapter runnerTableAdapter;
         private DataSet1TableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.TextBox emailTextBox;
@@ -382,5 +421,7 @@
         private System.Windows.Forms.TextBox genderTextBox;
         private System.Windows.Forms.DateTimePicker birthDateTimePicker;
         private System.Windows.Forms.TextBox countryTextBox;
+        public System.Windows.Forms.BindingSource runnerBindingSource;
+        private System.Windows.Forms.TextBox passwordVerText;
     }
 }

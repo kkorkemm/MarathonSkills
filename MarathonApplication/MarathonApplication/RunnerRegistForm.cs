@@ -32,15 +32,39 @@ namespace MarathonApplication
 
         private void registBtn_Click(object sender, EventArgs e)
         {
-            runnerBindingSource.EndEdit();
-            runnerBindingSource.AddNew();
-            runnerTableAdapter.Update(dataSet1);
+            bool isValid = true;
+
+            if (passwordTextBox.Text != passwordVerText.Text)
+            {
+                isValid = false;
+                MessageBox.Show("Пароли не совпадают");
+            }
+
+            if (isValid)
+            {
+                runnerBindingSource.EndEdit();
+                runnerTableAdapter.Update(dataSet1);
+
+
+            }
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            RunnerTable runnerTable = new RunnerTable();
-            runnerTable.Show();
+            
+        }
+
+        private void PhotoShowBtn_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog fileDialog = new OpenFileDialog();
+            fileDialog.Filter = "Image Files(*.png; *.jpeg; *.jpg) | *.png; *.jpeg; *.jpg | AllFiles(*.*) | *.*";
+
+            if (fileDialog.ShowDialog() == DialogResult.OK)
+            {
+                Photo.Image = new Bitmap(fileDialog.FileName);
+                PhotoText.Text = fileDialog.SafeFileName;
+            }
         }
     }
 }

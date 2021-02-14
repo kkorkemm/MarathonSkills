@@ -32,7 +32,8 @@ namespace MarathonApplication
             foreach (Form form in Application.OpenForms.Cast<Form>())
                 form.Hide();
             runnerRegistration.Show();
-            runnerBindingSource.AddNew();
+
+            runnerRegistration.runnerBindingSource.AddNew();
 
         }
 
