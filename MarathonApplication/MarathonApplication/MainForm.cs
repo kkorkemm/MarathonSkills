@@ -32,7 +32,9 @@ namespace MarathonApplication
 
         private void ForKnowBtn_Click(object sender, EventArgs e)
         {
-
+            AboutForm aboutForm = new AboutForm();
+            aboutForm.Show();
+            Hide();
         }
 
 

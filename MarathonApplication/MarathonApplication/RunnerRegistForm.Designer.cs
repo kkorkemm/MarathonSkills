@@ -259,7 +259,7 @@
             // 
             this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.runnerBindingSource, "Email", true));
             this.emailTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.emailTextBox.Location = new System.Drawing.Point(309, 262);
+            this.emailTextBox.Location = new System.Drawing.Point(333, 262);
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(274, 30);
             this.emailTextBox.TabIndex = 41;
@@ -268,7 +268,7 @@
             // 
             this.passwordTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.runnerBindingSource, "Password", true));
             this.passwordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.passwordTextBox.Location = new System.Drawing.Point(309, 298);
+            this.passwordTextBox.Location = new System.Drawing.Point(333, 298);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.PasswordChar = '*';
             this.passwordTextBox.Size = new System.Drawing.Size(274, 30);
@@ -278,7 +278,7 @@
             // 
             this.nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.runnerBindingSource, "Name", true));
             this.nameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.nameTextBox.Location = new System.Drawing.Point(309, 370);
+            this.nameTextBox.Location = new System.Drawing.Point(333, 370);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(274, 30);
             this.nameTextBox.TabIndex = 45;
@@ -287,7 +287,7 @@
             // 
             this.surnameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.runnerBindingSource, "Surname", true));
             this.surnameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.surnameTextBox.Location = new System.Drawing.Point(309, 406);
+            this.surnameTextBox.Location = new System.Drawing.Point(333, 406);
             this.surnameTextBox.Name = "surnameTextBox";
             this.surnameTextBox.Size = new System.Drawing.Size(274, 30);
             this.surnameTextBox.TabIndex = 47;
@@ -296,7 +296,7 @@
             // 
             this.genderTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.runnerBindingSource, "Gender", true));
             this.genderTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.genderTextBox.Location = new System.Drawing.Point(309, 442);
+            this.genderTextBox.Location = new System.Drawing.Point(333, 442);
             this.genderTextBox.Name = "genderTextBox";
             this.genderTextBox.Size = new System.Drawing.Size(274, 30);
             this.genderTextBox.TabIndex = 49;
@@ -305,7 +305,7 @@
             // 
             this.birthDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.runnerBindingSource, "Birth", true));
             this.birthDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.birthDateTimePicker.Location = new System.Drawing.Point(309, 478);
+            this.birthDateTimePicker.Location = new System.Drawing.Point(333, 478);
             this.birthDateTimePicker.Name = "birthDateTimePicker";
             this.birthDateTimePicker.Size = new System.Drawing.Size(274, 30);
             this.birthDateTimePicker.TabIndex = 51;
@@ -314,7 +314,7 @@
             // 
             this.countryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.runnerBindingSource, "Country", true));
             this.countryTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.countryTextBox.Location = new System.Drawing.Point(309, 514);
+            this.countryTextBox.Location = new System.Drawing.Point(333, 514);
             this.countryTextBox.Name = "countryTextBox";
             this.countryTextBox.Size = new System.Drawing.Size(274, 30);
             this.countryTextBox.TabIndex = 53;
@@ -325,7 +325,7 @@
             this.footer1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.footer1.Location = new System.Drawing.Point(0, 652);
             this.footer1.Name = "footer1";
-            this.footer1.Size = new System.Drawing.Size(1491, 62);
+            this.footer1.Size = new System.Drawing.Size(1382, 62);
             this.footer1.TabIndex = 1;
             // 
             // header1
@@ -334,13 +334,13 @@
             this.header1.Dock = System.Windows.Forms.DockStyle.Top;
             this.header1.Location = new System.Drawing.Point(0, 0);
             this.header1.Name = "header1";
-            this.header1.Size = new System.Drawing.Size(1491, 92);
+            this.header1.Size = new System.Drawing.Size(1382, 92);
             this.header1.TabIndex = 0;
             // 
             // passwordVerText
             // 
             this.passwordVerText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.passwordVerText.Location = new System.Drawing.Point(309, 334);
+            this.passwordVerText.Location = new System.Drawing.Point(333, 334);
             this.passwordVerText.Name = "passwordVerText";
             this.passwordVerText.PasswordChar = '*';
             this.passwordVerText.Size = new System.Drawing.Size(274, 30);
@@ -360,7 +360,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1491, 714);
+            this.ClientSize = new System.Drawing.Size(1382, 714);
             this.Controls.Add(label3);
             this.Controls.Add(this.passwordVerText);
             this.Controls.Add(emailLabel);

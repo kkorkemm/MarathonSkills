@@ -89,7 +89,7 @@ namespace MarathonApplication
             // 
             // ForRunnerBtn
             // 
-            this.ForRunnerBtn.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ForRunnerBtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ForRunnerBtn.Location = new System.Drawing.Point(391, 334);
             this.ForRunnerBtn.Name = "ForRunnerBtn";
             this.ForRunnerBtn.Size = new System.Drawing.Size(517, 74);
@@ -100,7 +100,7 @@ namespace MarathonApplication
             // 
             // ForSponsorBtn
             // 
-            this.ForSponsorBtn.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ForSponsorBtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ForSponsorBtn.Location = new System.Drawing.Point(391, 430);
             this.ForSponsorBtn.Name = "ForSponsorBtn";
             this.ForSponsorBtn.Size = new System.Drawing.Size(517, 74);
@@ -111,7 +111,7 @@ namespace MarathonApplication
             // 
             // ForKnowBtn
             // 
-            this.ForKnowBtn.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ForKnowBtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ForKnowBtn.Location = new System.Drawing.Point(391, 526);
             this.ForKnowBtn.Name = "ForKnowBtn";
             this.ForKnowBtn.Size = new System.Drawing.Size(517, 74);
@@ -126,7 +126,6 @@ namespace MarathonApplication
             this.loginButton1.Name = "loginButton1";
             this.loginButton1.Size = new System.Drawing.Size(187, 65);
             this.loginButton1.TabIndex = 8;
-
             // 
             // footer1
             // 
